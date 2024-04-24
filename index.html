@@ -9,13 +9,16 @@
     <span id="content">
         <input type="radio" id="check" required="required" value="yesno">
         <label for="check">Check this button if your parents are with you</label>
-        <input type="submit" value="go" onclick="location.href=link"></input>
+        <input type="submit" value="go" onclick="checkIsTrue()"></input>
     </span>
     </form>
   </body>
   <script>
     let link = new URLSearchParams(location.search).get("link".toString()) || "";
     document.title = "Link to "+link;
+
+    function checkIsTrue() {
+      location.href = link
+    }
   </script>
-  <script src="index.js"></script>
 </html>
