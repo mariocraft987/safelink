@@ -5,9 +5,12 @@
     <title>Safe Link</title>
   </head>
   <body>
+    <form>
     <span id="content">
-      Hello
+        <input type="radio" id="check" value="yesno">
+        <label for="check">Check this button if your parents are with you</label>
     </span>
+    </form>
   </body>
   <script>
     let link = new URLSearchParams(location.search).get("link".toString()) || "";
