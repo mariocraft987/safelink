@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Safe Link</title>
+  </head>
+  <body>
+    <span id="content">
+      Hello
+    </span>
+  </body>
+  <script>
+    let link = new URLSearchParams(location.search).get("link".toString()) || "";
+    document.title = "Link to "+link;
+  </script>
+  <script src="index.js"></script>
+</html>
